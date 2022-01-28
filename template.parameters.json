@@ -17,9 +17,6 @@
         },
         "secretName": "AzureVM--Password"
       }
-    },
-    "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
     }
   }
 }
