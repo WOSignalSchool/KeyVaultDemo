@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "reference": {
+        "keyVault": {
+            "id": "/subscriptions/30844dca-a3e1-43ca-b46d-12bfdce63e7b/resourceGroups/dieppawoac/providers/Microsoft.KeyVault/vaults/dieppawoacvault"
+        },
+        "secretName": "AzureVM--Username"
+      }
+    },
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+            "id": "/subscriptions/30844dca-a3e1-43ca-b46d-12bfdce63e7b/resourceGroups/dieppawoac/providers/Microsoft.KeyVault/vaults/dieppawoacvault"
+        },
+        "secretName": "AzureVM--Password"
+      }
+    },
+    "dnsLabelPrefix": {
+      "value": "GEN-UNIQUE"
+    }
+  }
+}
